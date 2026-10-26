@@ -1,0 +1,13 @@
+# Original datasets and local exports
+data/
+*.csv
+*.xlsx
+*.xls
+
+# Temporary files and local configuration
+.env
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
