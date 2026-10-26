@@ -64,7 +64,7 @@ Severity percentages use **6,531 late orders** as their denominator. Monthly rel
 | Late 8+ days | 2,779 | 79.27% | 1.70 |
 
 - **Review Score Drop:** difference between average scores for on-time/early and late 8+ days, displayed as **2.59 points**.
-- **Low Rating Gap:** difference between the two groups’ low-rating rates, displayed in Power BI as **+70.03 pp**. The exact two-decimal figure still needs an **unrounded SQL check**; subtracting the displayed rounded rates gives 70.02 pp.
+- **Low Rating Gap:** Difference between the low-rating rates for late 8+ day and on-time/early reviewed orders. Validated using unrounded SQL rates (79.2731% vs. 9.2474%), confirming the **+70.03 percentage-point** gap displayed in Power BI.
 - **Regional Exposure Watchlist:** Top 5 states by late-order merchandise value: **SP, RJ, MG, BA, RS**. SP leads exposure (**R$269.1K**). RJ has the largest exposure among states whose late low-rating rate exceeds the overall **62.42%** benchmark (**R$215.4K; 73.08%**). The regional scatterplot uses late-order value (X), late low-rating rate (Y) and late reviewed order count (bubble size).
 
 **Interpretation note:** Late-order merchandise value is **not lost revenue**. The association between delays and ratings does **not** establish causation.
