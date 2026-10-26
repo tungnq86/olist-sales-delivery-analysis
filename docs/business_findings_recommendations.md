@@ -35,7 +35,7 @@ The difference is substantial and worth investigating. It shows an association, 
 
 ### 5. Rio de Janeiro deserves attention when order value and reviews are viewed together
 
-**Rio de Janeiro (RJ)** had **R$215.4K** in merchandise value associated with late orders. Of its late reviewed orders, **73.08%** received low ratings, above the **62.42%** overall benchmark. **SP** had a higher late-order merchandise value (**R$269.1K**), but a lower late low-rating rate (**54.35%**).
+Late deliveries were associated with **R$985.62K** in merchandise value overall. **SP** had the highest amount (**R$269.1K**), while **Rio de Janeiro (RJ)** followed with **R$215.4K**. Among late reviewed orders, RJ had a notably higher low-rating rate (**73.08%**) than SP (**54.35%**) and the overall benchmark (**62.42%**).
 
 SP has greater commercial exposure by value, while RJ stands out when that value is considered alongside customer dissatisfaction.
 
