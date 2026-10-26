@@ -86,7 +86,7 @@ The regional exposure watchlist was consistent with SQL: **SP (R$269,077.55; 54.
 
 ## 5. Remaining checks and interpretation limits
 
-- **Rounding:** Power BI shows a **+70.03 pp** low-rating gap between late 8+ days and on-time/early deliveries. The two SQL rates were exported rounded to two decimals; the *unrounded difference* has not yet been directly checked.
+- **Low Rating Gap:** Validated against unrounded SQL rates. The low-rating rate was 9.2474% for on-time/early deliveries and 79.2731% for deliveries delayed by 8+ days, confirming a gap of **70.03 percentage points**.
 - **DAX and review lineage:** Exact DAX was reviewed for six core expressions, but not every dashboard measure. Before describing the model as fully audited, confirm that Power BI's `OrderReviews` table uses the same deduplicated review logic as `order_reviews_latest`.
 - **Visual coverage:** Key totals, rankings and representative values were checked; a full row-by-row export comparison of every Power BI visual was not performed. Year-slicer and page interactions were also tested manually, not through automated regression tests.
 - **Interpretation:** Review-based results exclude orders without reviews. Late-order merchandise value is **not lost revenue**, and the relationship between delays and low ratings is **associative, not causal**.

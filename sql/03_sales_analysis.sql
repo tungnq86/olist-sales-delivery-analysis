@@ -1,4 +1,6 @@
 -- Sales Performance: Overall KPIs
+-- Initial exploration: all available delivered orders
+-- Dashboard reporting period is validated separately
 SELECT
     COUNT(DISTINCT o.order_id) AS total_orders,
     COUNT(*) AS total_order_items,
@@ -13,6 +15,7 @@ INNER JOIN public.order_items oi
 WHERE o.order_status = 'delivered';
 
 -- Sales Performance: Monthly Sales Trends
+-- Initial exploration: full available date range
 SELECT
     DATE_TRUNC('month', o.order_purchase_timestamp)::DATE AS order_month,
     COUNT(DISTINCT o.order_id) AS total_orders,
@@ -182,7 +185,7 @@ FROM regional_sales
 ORDER BY merchandise_sales DESC
 LIMIT 10;
 
--- Save verification test
+
 
 
 

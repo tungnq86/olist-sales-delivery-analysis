@@ -31,6 +31,7 @@ order_level AS (
         AND o.order_purchase_timestamp < '2018-09-01'
         AND o.order_delivered_customer_date IS NOT NULL
         AND o.order_estimated_delivery_date IS NOT NULL
+	AND o.order_delivered_customer_date >= o.order_purchase_timestamp
 ),
 regional_summary AS (
     SELECT

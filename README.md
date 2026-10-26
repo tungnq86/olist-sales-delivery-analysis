@@ -85,6 +85,16 @@ olist-sales-delivery-analysis/
     └── business_findings_recommendations.md
 ```
 
+## Reproducing the Analysis
+
+1. Download the [Olist dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) from Kaggle.
+2. Create a PostgreSQL database and run [01_create_tables.sql](sql/01_create_tables.sql) to set up the tables.
+3. Import the corresponding CSV files, including product category translations and customer reviews.
+4. Run the [SQL analysis scripts](sql/) in order. Script 05 creates the `order_reviews_latest` view used in subsequent analyses.
+5. Use [09_kpi_reconciliation.sql](sql/09_kpi_reconciliation.sql) to check the main dashboard metrics.
+
+The [Power BI report](powerbi/Olist_ecommerce_analysis.pbix) can be opened in Power BI Desktop. Refreshing the data may require updating the PostgreSQL connection settings.
+
 ## Scope & limitations
 
 The dataset is historical, and 2018 covers January–August only. Review-based measures exclude orders without matching reviews. **Late-order merchandise value is not lost revenue**, and the observed relationship between delivery delays and ratings does not establish causation.
